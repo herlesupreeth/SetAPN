@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SetAPN</string>
+    <string name="mcc">MCC</string>
+    <string name="mnc">MNC</string>
+    <string name="search_apns">Search APNs</string>
+    <string name="add_apn">Add APN</string>
+    <string name="apn_name">APN Name</string>
+    <string name="apn_type">APN Type</string>
+    <string name="ipv4">IPv4</string>
+    <string name="ipv6">IPv6</string>
+    <string name="ipv4v6">IPv4v6</string>
+    <string name="preferred_apn">Preferred APN</string>
 </resources>

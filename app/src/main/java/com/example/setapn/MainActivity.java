@@ -1,6 +1,8 @@
 package com.example.setapn;
 
+import android.Manifest;
 import android.app.Activity;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -9,6 +11,10 @@ import android.database.SQLException;
 import android.net.Uri;
 import android.provider.Telephony;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends Activity {
     /*
@@ -180,6 +186,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         // Adding default APN to access internet
         int id = checkNewAPN("internet", "internet", "default", "001", "01");
         if (id == -1) {
